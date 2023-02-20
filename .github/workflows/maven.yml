@@ -27,5 +27,5 @@ jobs:
         java-version: '19'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: maven clean and install
+    - name: Build with mvn
+      run: mvn clean and install
