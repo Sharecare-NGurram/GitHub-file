@@ -1,9 +1,14 @@
-package hello;
+package java.hello;
 
-import org.joda.time.LocalTime;
-
-public class HelloWorld {
-  public static void main(String[] args) {
-    System.out.println(greeter.sayHello());
-  }
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
 }
+
