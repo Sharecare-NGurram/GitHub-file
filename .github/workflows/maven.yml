@@ -29,4 +29,3 @@ jobs:
         cache: maven
     - name: Build with mvn
       run: mvn clean and install
--mvn - f ("C:\actions-runner\actions-runner\_work\GitHub-file//pom.xml")
