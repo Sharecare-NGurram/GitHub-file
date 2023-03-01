@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: 172.31.1.96
+    runs-on: 44.213.108.58
 
     steps:
     - uses: actions/checkout@v3
