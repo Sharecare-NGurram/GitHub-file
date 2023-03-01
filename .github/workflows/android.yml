@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ec2-44-213-108-58.compute-1.amazonaws.com
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
