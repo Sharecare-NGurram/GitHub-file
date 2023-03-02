@@ -1,4 +1,4 @@
-name: Android CI
+name: Build & Publish Release APK
 
 on:
   push:
@@ -26,8 +26,6 @@ jobs:
       run: ./gradlew build
     - name: Build Release APK
       run: ./gradlew assembleRelease
-    - name: Releasing using Hub
-      uses: Sharecare-NGurram/GitHub-file/release-apk@master
       env:
        GITHUB_TOKEN: ${{ secrets.TOKEN }}
        APP_FOLDER: app
