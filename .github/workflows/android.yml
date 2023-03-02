@@ -27,7 +27,7 @@ jobs:
     - name: Build Release APK
       run: ./gradlew assembleRelease
     - name: Releasing using Hub
-     # uses: GitHub-file/release-apk@master
+      uses: Sharecare-NGurram/release-apk@master
       env:
        GITHUB_TOKEN: ${{ secrets.TOKEN }}
        APP_FOLDER: app
