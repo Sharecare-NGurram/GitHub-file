@@ -28,10 +28,11 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
+      # directory: GitHub-file/.github/workflows
         image: naveengithub/androidci
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
+        dockerfile: GitHub-file/.github/workflows/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
      
