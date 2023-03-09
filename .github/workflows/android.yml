@@ -36,7 +36,7 @@ jobs:
           
     - name: Build and push
       uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: naveengithub/androidci:latest
+      with:
+        context: .
+        push: true
+        tags: naveengithub/androidci:latest
