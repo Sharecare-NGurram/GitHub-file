@@ -1,4 +1,4 @@
-FROM openjdk:8
-EXPOSE 8080
-ADD target/androidci.jar androidci.jar
-ENTRYPOINT ["java","-jar","/androidci.jar"]
+RUN echo hello \
+# comment
+world
+docker build -t
