@@ -1,8 +1,4 @@
-FROM node:latest
-RUN mkdir -p /src/app
-WORKDIR /src/app
-COPY package.json /src/app/package.json
-RUN npm install
-COPY . /src/app
-EXPOSE 3003
-CMD [ "npm", "start" ]
+FROM openjdk:8
+EXPOSE 8080
+ADD target/androidci.jar androidci.jar
+ENTRYPOINT ["java","-jar","/androidci.jar"]
