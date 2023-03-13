@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: C:\Program Files\Docker\Docker docker build -t Dockerfile
+       #   file: C:\Program Files\Docker\Docker docker build -t Dockerfile
           push: true
           tags: naveengithub/androidci/clockbox:latest
