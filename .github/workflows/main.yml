@@ -27,4 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: naveengithub/androidci/:latest
+          tags: ${{secrets.ACR_NAME}}/androidci:latest,${{secrets.ACR_NAME}}/androidci:${{ env.BRANCH }}
+          build-args: |
+           BRANCH=${{ env.BRANCH }}
+              
