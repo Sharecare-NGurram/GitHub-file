@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile
+          file: docker build -f ./Dockerfile
           push: true
           tags: ${{secrets.ACR_NAME}}/androidci:latest
               
